@@ -1,0 +1,9 @@
+,Model,Accuracy
+0,Logistic Regression,0.74
+1,Logistic w/ PCA,0.67
+2,Decision Tree,0.78
+3,Random Forest,0.79
+4,Random Forest w/ dropping features,0.76
+5,K-Nearest Neighbors,0.78
+6,K-Nearest Neighbors w/ dropping features,0.75
+7,Neural Network w/ 4 layers,0.77
