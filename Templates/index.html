@@ -1,0 +1,203 @@
+<html>
+<head>
+   <link href = "style.css" rel="sylesheet" type = "text/css">
+</head>
+   <body>
+      <div id="container">
+         <div id="headerArea">
+             <div id="header"> <h1 id = "header-text">Titanic Simulator</h1></div>
+             
+         </div>
+
+         <div id="flex">
+             <aside id="leftSidebar">
+                 <h2>What is Titanic Simulator?</h2>
+                 <p>This "simulator" is really a machine-learning powered algorithm designed to predict deaths from the 1912 sinking of the RMS Titanic.</p>
+                 <p>Titanic simulator takes in your demographic information (historical or fictional!) and predicts with 79% accuracy whether you would perish aboard the Titanic in 1912.</p>
+                 <h2>How to Use Titanic Simulator:</h2>
+                 <p>In order to use Titanic Simulator, you can use real historical data from a famous figure or relative, or you can make up your own data! Here are some things to consider:</p>
+                 <ul>
+                    <li>You must enter the data exactly, including capitalization and spelling (i.e. Queenstown not queenstown, M not male)</li>
+                    <li>The ticket fare variable takes in 1912 GBP, to get an idea of ticket fares you can go <a href = http://www.jamescamerononline.com/TitanicFAQ.htm>here</a></li>
+                    <li>"Queenstown" is modern day Cobh, Ireland</li>
+                 </ul>
+             </aside>
+             <main>
+               
+                 <center><h1>Will Your Heart Go On?</h1></center> 
+               <form action = "http://127.0.0.1:5000/" method = "post">
+                  <h3>What class are you traveling in? (1,2,3)</h3>
+                  <p><input type = "text" name = "tix_class" /></p>
+         
+                  <h3>How old are you?</h3>
+                  <p><input type = "text" name = "age" /></p>
+         
+                  <h3>How many siblings and/or spouses are with you?</h3>
+                  <p><input type = "text" name = "sibsp" /></p>
+         
+                  <h3>How many parents and/ or children are with you?</h3>
+                  <p><input type = "text" name = "parch" /></p>
+         
+                  <h3>How much did you pay for your ticket?</h3>
+                  <p><input type = "text" name = "fare" /></p>
+         
+                  <h3>What is your sex? (F/M)</h3>
+                  <p><input type = "text" name = "sex" /></p>
+         
+                  <h3>Where did you embark from? (Queenstown,Cherbourg, or Southampton)</h3>
+                  <p><input type = "text" name = "embark" /></p>
+         
+                  <h3><input type = "submit" value = "submit" /></h3>
+               
+               </form>  
+             </main>
+             <aside id="rightSidebar">
+                 <h2>About Titanic Simulator</h2>
+                 <p>This simulator runs on a Random Forest that was trained on real passenger records from the RMS Titanic. 1000 estimators were used in this forest, and we 
+                    attained 79% accuracy. A variety of different models and different optimization methods were attempted (such as PCA), however this model was our highest-performing overall.
+                 </p>
+                 <h2>About Us</h2>
+                 <p>We are Layla Burgan and Clare Sakauye, students at the UC Davis Bootcamp in Data Visualization and Analytics. This was completed in two weeks as our final project.</p>
+                 <p>Our mission overall is to make data fun, and to use topics that are interesting to us in our professional development as data scientists. We have worked together on a variety of other projects, analyzing everything from true crime to UFOs.</p>
+                
+             </aside>
+         </div>
+         <footer id="footer"><a href = "https://github.com/lburgan/project-4/tree/main">Find us on Github</a></footer>
+     </div>
+   
+    <style>
+      :root {
+    
+    --body-bg-image: url('https://images.unsplash.com/photo-1559825481-12a05cc00344?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80');
+
+    /* colors */
+    --content: #25526e;
+}
+
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #08031A;
+    background-size: 1000px;
+    color: #fceaff;
+    background-image: var(--body-bg-image);
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+#container a {
+    color: #64d6f5;
+    font-weight: bold;
+}
+
+#header {
+    width: 100%;
+    background-color: #0a011f;
+    height: 150px;
+    text-align:center;
+    background-size: 100%;
+    
+}
+#header-text{
+    color:#eaebff;
+    font-size: 48px; 
+    padding-top:50px;
+}
+
+#flex {
+    display: flex;
+}
+
+
+aside {
+    background-color: #215eda;
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+    /* this makes the sidebar text slightly smaller */
+}
+
+
+
+main {
+    background-color: #79bbee;
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
+
+#leftSidebar {
+    order: 1;
+}
+
+#rightSidebar {
+    order: 3;
+}
+
+footer {
+    background-color: #0a011f;
+   
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+h1,
+h2,
+h3 {
+    color: #080337;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+
+    #leftSidebar {
+        order: 2;
+    }
+
+    #rightSidebar {
+        order: 3;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}
+    </style>
+      
+   </body>
+</html>
+
+
+
+
+

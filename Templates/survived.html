@@ -1,0 +1,151 @@
+<html>
+<head>
+   <link href = "style.css" rel="sylesheet" type = "text/css">
+</head>
+   <body>
+      <div id="container">
+         <div id="headerArea">
+             <div id="header"> <h1 id = "header-text">Titanic Simulator</h1></div>
+             
+         </div>
+
+         <div id="flex">
+           
+             <main>
+               <center><h1>Congratulations!</h1><h2>You have SURVIVED the sinking of the Titanic</h2></center>
+             </main>
+          
+         </div>
+         <footer id="footer"><a href = "index.html">Try it again</a></footer>
+     </div>
+   
+    <style>
+      :root {
+    
+    --body-bg-image: url('https://images.unsplash.com/photo-1559825481-12a05cc00344?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80');
+
+    /* colors */
+    --content: #25526e;
+}
+
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #08031A;
+    background-size: 1000px;
+    color: #fceaff;
+    background-image: var(--body-bg-image);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+#container a {
+    color: #64d6f5;
+    font-weight: bold;
+}
+
+#header {
+    width: 100%;
+    background-color: #0a011f;
+    height: 150px;
+    text-align:center;
+    background-size: 100%;
+    color:#eaebff
+    
+}
+
+#header-text{
+    color:#eaebff;
+    font-size: 48px; 
+    padding-top:50px;
+}
+#flex {
+    display: flex;
+}
+
+
+
+
+
+
+main {
+    background-color: #79bbee;
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
+
+#leftSidebar {
+    order: 1;
+}
+
+#rightSidebar {
+    order: 3;
+}
+
+footer {
+    background-color: #0a011f;
+   
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+h1,
+h2,
+h3 {
+    color: #080337;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+
+    #leftSidebar {
+        order: 2;
+    }
+
+    #rightSidebar {
+        order: 3;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}
+    </style>
+      
+   </body>
+</html>
+
+
+
+
+
