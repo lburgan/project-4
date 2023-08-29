@@ -10,7 +10,7 @@ Layla Burgan and Clare Sakauye
 
 **Final_Model:** final random forest model 
 
-**Results:** model progression, final model ouputs and Tableau visualizations
+**Results:** model progression, final model outputs and Tableau visualizations
 
 [Link to our Tableau Story](https://public.tableau.com/views/Project-4-Titanic/TitanicPredictions?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link) 
 
@@ -26,11 +26,11 @@ We set out to answer the following questions using our model.
 
 **1) Who will survive the Titanic sinking according to our model?**
 
-    Our model predicted that young, 1st class women were most likely to survial, true to the actual data.  
+    Our model predicted that young, 1st class women were most likely to survive, true to the actual data.  
 
 **2) What feature(s) contributed most to passenger's survival?**
 
-    Through feature importance, we found age, fare and sex to be the biggest contributing factors to survial according to our model.
+    Through feature importance, we found age, fare and sex to be the biggest contributing factors to survival according to our model.
 
 **3) What type of machine learning model is most effective in predicting survivors?**
 
