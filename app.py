@@ -12,11 +12,11 @@ def login():
     
         tix = request.form.get['tix_class']
         age = request.form.get["age"]
-        sibsp = request.form.get["sibsp"]
-        parch = request.form.get["parch"]
-        fare = request.form.get['fare']
-        sex = request.form.get["sex"]
-        embark = request.form.get["embark"]
+        sibsp = request.form["sibsp"]
+        parch = request.form["parch"]
+        fare = request.form['fare']
+        sex = request.form["sex"]
+        embark = request.form["embark"]
 
         demo_list = [tix,age,sibsp,parch,fare,sex,embark]
         survival = predict_titanic(demo_list)
