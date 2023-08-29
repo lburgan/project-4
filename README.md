@@ -19,7 +19,7 @@ For our project we used passenger record data from the RMS Titanic to train and 
 
 Our dataset came from Kaggle and was comprised of over 1000 passenger records. 
 
-The data was cleaned and used to develop and test a Random Forest model with 1000 estimators, resulting in 79% accuracy. 
+The data was cleaned, used to develop, and test a Random Forest model with 1000 estimators, resulting in 79% accuracy. 
 
 # Model Results 
 We set out to answer the following questions using our model. 
