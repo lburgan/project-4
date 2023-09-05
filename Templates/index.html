@@ -102,6 +102,13 @@ body {
     font-weight: bold;
 }
 
+@font-face {
+                font-family: Trajan;
+                src: url('TrajanBold.ttf');
+            }
+
+
+
 #header {
     width: 100%;
     background-color: #0a011f;
@@ -114,6 +121,7 @@ body {
     color:#eaebff;
     font-size: 48px; 
     padding-top:50px;
+    font-family: Trajan;
 }
 
 #flex {
@@ -126,7 +134,6 @@ aside {
     width: 200px;
     padding: 20px;
     font-size: smaller;
-    /* this makes the sidebar text slightly smaller */
 }
 
 
@@ -157,15 +164,19 @@ footer {
 }
 
 h1,
-h2,
-h3 {
+h2{
     color: #080337;
+    font-family: Trajan;
 }
-
+h3{
+    color: #1f1b42; 
+}
 h1 {
     font-size: 25px;
 }
-
+h2{
+    font-size: 14px;
+}
 
 @media only screen and (max-width: 800px) {
     #flex {
